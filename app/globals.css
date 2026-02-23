@@ -1,16 +1,33 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: Harvey;
-  src: url("/public/assets/fonts/075adf7a92f05f28-s.p.woff2") format("woff2");
+body {
+  box-sizing: border-box;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: Harvey;
+  src: url("/assets/fonts/dd4c3ed54f9a74fa-s.p.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Harvey-small;
+  src: url("/assets/fonts/45ff0666134a754e-s.p.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Harvey-sans;
+  src: url("/assets/fonts/075adf7a92f05f28-s.p.woff2") format("woff2");
+  font-display: swap;
 }
 
 .harvey {
   font-family: Harvey;
+}
+
+.harvey-small {
+  font-family: Harvey-small;
+}
+
+.harvey-sans {
+  font-family: Harvey-sans;
 }
